@@ -4,7 +4,7 @@
 
 ![ProjectCoverImage](./assets/quizLanding.png)
 
-As a beginner developer, I propose to build an interactive Trivia Quiz Game web application. This project will not only serve as an engaging and fun experience for users but also as an excellent opportunity for me to apply and expand my web development skills.
+As a beginner developer, I wanted to build an interactive Trivia Quiz Game web application. This project will not only serve as an engaging and fun experience for users but also as an excellent opportunity for me to apply and expand my web development skills.
 
 ## Why a Trivia Game?
 
