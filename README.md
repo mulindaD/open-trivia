@@ -6,6 +6,8 @@
 
 As a beginner developer, I wanted to build an interactive Trivia Quiz Game web application. This project will not only serve as an engaging and fun experience for users but also as an excellent opportunity for me to apply and expand my web development skills.
 
+You can view the prototype here: [Open Trivia Figma Prototype](https://www.figma.com/proto/TxwvjJV0w1p3MXtCbjamiz/Quiz-Web---Glowing-%26-Gradient-Text-Style-(Community)?page-id=1%3A130&node-id=827-3357&viewport=463%2C257%2C0.07&t=os7S2VayfmmDDodz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=827%3A3357)
+
 ## Why a Trivia Game?
 
 Trivia games are inherently fun and educational, offering several benefits:
