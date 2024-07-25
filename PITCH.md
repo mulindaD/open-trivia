@@ -2,6 +2,8 @@
 
 ## Project Overview
 
+![ProjectCoverImage](./assets/quizLanding.png)
+
 As a beginner developer, I propose to build an interactive Trivia Quiz Game web application. This project will not only serve as an engaging and fun experience for users but also as an excellent opportunity for me to apply and expand my web development skills.
 
 ## Why a Trivia Game?
@@ -57,6 +59,13 @@ The project will utilize modern web technologies and development tools:
 1. **Planning and Design**:
    - Create wireframes and mockups using Figma
    - Plan the component structure and data flow
+
+   You can view the prototype here: [Open Trivia Figma Prototype](https://www.figma.com/proto/TxwvjJV0w1p3MXtCbjamiz/Quiz-Web---Glowing-%26-Gradient-Text-Style-(Community)?page-id=1%3A130&node-id=827-3357&viewport=463%2C257%2C0.07&t=os7S2VayfmmDDodz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=827%3A3357)
+
+   Here are some of the project assets already designed on Figma:
+   ![Question Selection](./assets/questionSelection.png)
+   ![Score Page](./assets/scorePage.png)
+   ![Leaderboard](./assets/leaderboard.png)
 
 2. **Development**:
    - Set up the development environment
