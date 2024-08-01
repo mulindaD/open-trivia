@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Open Trivia</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="bg-gray-950 text-gray-200 font-body">
+    <div id="app" class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 ">Open Trivia</h1>
+        
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="flex flex-col items-center">
+            <h4 class="text-xl mb-4">Open the Trivia chest</h4>
+            <h2 class="text-4xl font-mono mb-4 gradient-text">Embrace the Quest</h2>
+            <span class="w-auto mb-8">
+                <p class="mb-4 text-center">Where Every Question Unveils a World of Wisdom, Sparking the Flames of Learning and Illuminating the Path to Intellectual Brilliance!</p>
+            </span>
+            <form id="game-form" class="space-y-4 py-16 px-8 border-2 border-slate-700 rounded-lg">
+                <div>
+                    <label for="game-tag" class="block mb-2">Game Tag</label>
+                    <input type="text" id="game-tag" placeholder="Enter your Game Tag" class="w-full p-2 rounded bg-gray-800 text-sm text-white border border-gray-700 focus:border-purple-500 focus:outline-none">
+                </div>
+                <div>
+                    <label for="category" class="block mb-2">Category</label>
+                    <select id="category" class="w-full p-2 rounded bg-gray-800 text-sm text-white border border-gray-700 focus:border-purple-500 focus:outline-none appearance-none">
+                        <option value="">Select a category</option>
+                        <!-- Add categories here -->
+                    </select>
+                </div>
+                <button type="submit" class="w-full py-2 px-4 rounded transition duration-300 ease-in-out bg-gradient-to-tr from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600">Start Game 🕹️</button>
+            </form>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="question-screen" class="p-6 flex flex-col items-center hidden">
+            <h2 id="category-title" class="text-2xl mb-4 gradient-text">Category Name</h2>
+            <div id="timer" class="text-xl mb-4">00:10</div>
+            <div id="question-number" class="mb-2 border-2 border-slate-700 py-2 px-4 rounded-full">Question 1</div>
+            <p id="question-text" class="text-xl mb-4">Question text goes here?</p>
+            <div id="answer-buttons" class="space-y-2">
+                <!-- Answer buttons will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class= "p-6 flex flex-col items-center hidden">
+            <h2 class="text-2xl mb-4 gradient-text">Whoosh! You got through it... 🎉</h2>
+            <p id="score-display" class="text-xl mb-4">Your score: 0 of 10</p>
+            <div class="space-x-4">
+                <button id="view-leaderboard" class="py-2 px-4 rounded transition duration-300 ease-in-out bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600">View Leaderboard</button>
+                <button id="play-again" class="py-2 px-4 rounded transition duration-300 ease-in-out bg-gray-700 text-white hover:bg-gray-600">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Leaderboard Screen -->
+        <div id="leaderboard-screen" class="p-6 flex flex-col items-center hidden">
+            <h2 class="text-2xl mb-4 gradient-text">Leaderboard</h2>
+            <ul id="leaderboard-list" class="space-y-2 max-h-64 overflow-y-auto">
+                <!-- Leaderboard entries will be dynamically added here -->
+            </ul>
+            <button id="play-again-leaderboard" class="mt-4 py-2 px-4 rounded transition duration-300 ease-in-out bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
