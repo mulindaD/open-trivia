@@ -6,7 +6,11 @@
     <title>Open Trivia</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-gray-950 text-gray-200 font-body">
+<body class="relative h-full w-full bg-slate-950 text-gray-200 font-body">
+    <!-- Background styling  -->
+    <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+    
+    <!-- Main Section  -->
     <div id="app" class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-8 ">Open Trivia</h1>
         
@@ -34,7 +38,7 @@
         </div>
 
         <!-- Question Screen -->
-        <div id="question-screen" class="p-6 flex flex-col items-center ">
+        <div id="question-screen" class="p-6 flex flex-col items-center hidden">
             <h2 id="category-title" class="text-2xl mb-4 gradient-text">Category Name</h2>
             <div id="timer" class="text-xl mb-4">00:10</div>
             <div id="question-number" class="mb-2 border-2 border-slate-700 py-2 px-4 rounded-full">Question 1</div>
