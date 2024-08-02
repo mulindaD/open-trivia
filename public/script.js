@@ -163,8 +163,9 @@ function updateLeaderboard() {
     })
     .then(response => response.json())
     .then(() => {
+        console.log('Leaderboard updated successfully')
         // After adding the new score, fetch the updated leaderboard
-        showLeaderboard();
+        // showLeaderboard();
     })
     .catch(error => {
         console.error('Error updating leaderboard:', error);
@@ -179,8 +180,14 @@ function showLeaderboard() {
     fetch('http://localhost:3000/leaderboard')
         .then(response => response.json())
         .then(leaderboard => {
+            // Sort the leaderboard by score in descending order
+            leaderboard.sort((a, b) => b.score - a.score);
+
+            // Take only the top 10 entries
+            const top10 = leaderboard.slice(0, 10);
+
             leaderboardList.innerHTML = '';
-            leaderboard.forEach((entry, index) => {
+            top10.forEach((entry, index) => {
                 const li = document.createElement('li');
                 li.textContent = `${index + 1}. ${entry.player}: ${entry.score}`;
                 li.classList.add('py-2', 'px-8', 'border-2', 'border-slate-700', 'rounded-full');

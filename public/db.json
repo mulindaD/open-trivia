@@ -1,33 +1,33 @@
 {
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "General Knowledge"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Science"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "History"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Geography"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Entertainment"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Computers"
     }
   ],
   "questions": [
     {
-      "id": 1,
+      "id": "1",
       "category_id": 1,
       "question": "What is the capital of France?",
       "correct_answer": "Paris",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "category_id": 2,
       "question": "What is the chemical symbol for water?",
       "correct_answer": "H2O",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "category_id": 6,
       "question": "What does CPU stand for?",
       "correct_answer": "Central Processing Unit",
@@ -62,7 +62,7 @@
   ],
   "leaderboard": [
     {
-      "id": 1,
+      "id": "1",
       "player": "DOM",
       "score": 10
     },
@@ -90,6 +90,51 @@
       "id": "b488",
       "player": "KYE",
       "score": 5
+    },
+    {
+      "id": "c79f",
+      "player": "DOM",
+      "score": 3
+    },
+    {
+      "id": "c6da",
+      "player": "gt",
+      "score": 2
+    },
+    {
+      "id": "6c33",
+      "player": "DOM",
+      "score": 2
+    },
+    {
+      "id": "5c9b",
+      "player": "DOM",
+      "score": 2
+    },
+    {
+      "id": "e812",
+      "player": "DOM",
+      "score": 3
+    },
+    {
+      "id": "b4a1",
+      "player": "jhgl",
+      "score": 2
+    },
+    {
+      "id": "9a47",
+      "player": "Dom",
+      "score": 4
+    },
+    {
+      "id": "4d91",
+      "player": "asdasd",
+      "score": 3
+    },
+    {
+      "id": "0cba",
+      "player": "asldj",
+      "score": 1
     }
   ]
 }
