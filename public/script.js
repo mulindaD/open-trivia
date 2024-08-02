@@ -99,7 +99,7 @@ function showQuestion() {
     answers.forEach(answer => {
         const button = document.createElement('button');
         button.textContent = answer;
-        button.classList.add('answer-btn', 'py-2', 'px-4', 'rounded', 'transition', 'duration-300', 'ease-in-out', 'bg-gray-700', 'text-white', 'hover:bg-gray-600','hover:outline-slate-700', 'flex', 'flex-col', 'items-center',);
+        button.classList.add('answer-btn', 'py-2', 'px-8', 'rounded-full', 'transition', 'duration-300', 'ease-in-out', 'bg-transparent', 'border-2', 'border-slate-700', 'text-white', 'hover:bg-gray-600','hover:outline-slate-700', 'flex', 'flex-col', 'items-center',);
         button.addEventListener('click', () => selectAnswer(answer));
         answerButtons.appendChild(button);
     });
